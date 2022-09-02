@@ -1,0 +1,9 @@
+Crear entorno virtual en Python
+py -m venv <nombre carpeta a crear, usualmente venv>      %%Se crea un python local en la carpeta del proyecto
+.\<nombre carpeta creada>\Scripts\activate				  %%Se activa el entorno virtual (comandos para Windows)
+deactivate												  %%Se desactiva el entorno virtual
+alias <nombre del alias>=<Comando a asignar> 			  %%Se crea un alias, que acorte comandos
+pip freeze 												  %%Verificar modulos instalados en el EV
+pip freeze > requirements.txt							  %%Crea un archivo con los modulos y versiones requeridos para el funcionamiento del proyecto
+pip install <modulo>									  %%Instala un modulo o libreria
+pip install -r requirements.txt							  %%Instala los modulos y versiones listados en el archivo de requerimientos
